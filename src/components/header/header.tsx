@@ -47,12 +47,21 @@ export default function HeaderComponent() {
             open={openDrawer}
             onClose={() => setOpenDrawer(false)}
           >
-            <Box sx={{ width: 250 }} role="presentation">
+            <Box
+              sx={{
+                width: 250,
+                background: '#1C1B1B',
+                height: '100%',
+              }}
+              role="presentation"
+            >
               <List sx={{ mt: 1 }}>
                 {listOfNavigation.map((item, index) => (
                   <ListItemButton key={index}>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
-                    <ListItemText primary={item.label} />
+                    <ListItemIcon sx={{ color: '#d0f576' }}>
+                      {item.icon}
+                    </ListItemIcon>
+                    <ListItemText sx={{ color: '#fff' }} primary={item.label} />
                   </ListItemButton>
                 ))}
               </List>
