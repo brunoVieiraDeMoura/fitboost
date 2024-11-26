@@ -3,6 +3,8 @@ import './globals.css';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/utils/colors/theme';
+import HeaderComponent from '@/components/header/header';
+
 export const metadata: Metadata = {
   title: 'fitboost',
   authors: { name: 'Bruno Vieira de Moura' },
@@ -36,7 +38,10 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body suppressHydrationWarning>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <HeaderComponent />
+            {children}
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
