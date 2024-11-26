@@ -5,9 +5,21 @@ import CardGeneric from './card-generic';
 import { CardGObj } from './obj-card';
 export default function FeaturesComponent() {
   return (
-    <section>
-      <Box sx={{ m: 2, mt: 4 }}>
-        <>
+    <div
+      style={{
+        height: '100vh',
+      }}
+    >
+      <Box
+        sx={{
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-evenly',
+          p: 2,
+        }}
+      >
+        <div>
           <Typography
             textAlign="center"
             variant="h3"
@@ -21,10 +33,11 @@ export default function FeaturesComponent() {
             Descubra como o fit<span style={{ color: '#BBEE33' }}>boost</span>{' '}
             transforma sua rotina de exercícios com recursos inovadores:
           </Typography>
-        </>
+        </div>
         {CardGObj.map((item, index) => (
           <div key={index}>
             <CardGeneric
+              ordem={index % 2 === 0 ? 0 : 1}
               subtitle={item.title}
               text_description={item.text_description}
               icon={item.icon}
@@ -32,6 +45,6 @@ export default function FeaturesComponent() {
           </div>
         ))}
       </Box>
-    </section>
+    </div>
   );
 }

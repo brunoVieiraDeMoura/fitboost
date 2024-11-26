@@ -13,14 +13,16 @@ type IGeneric = {
   subtitle: string;
   icon: React.ReactNode;
   text_description: string;
+  ordem: number;
 };
 export default function CardGeneric({
   subtitle,
   text_description,
   icon,
+  ordem,
 }: IGeneric) {
   return (
-    <Card sx={{ maxWidth: '100%', mt: 2 }}>
+    <Card sx={{ maxWidth: '100%' }}>
       <CardActionArea>
         <CardContent
           sx={{
@@ -29,8 +31,8 @@ export default function CardGeneric({
             justifyContent: 'space-around',
           }}
         >
-          <Box sx={{ maxWidth: '70%' }}>
-            <Typography gutterBottom variant="subtitle1" component="div">
+          <Box sx={{ order: ordem, maxWidth: '70%' }}>
+            <Typography variant="subtitle1" component="div">
               {subtitle}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>

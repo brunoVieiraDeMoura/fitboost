@@ -9,7 +9,7 @@ import Image from 'next/image';
 import imagePath from '../../../public/background.jpg';
 export default function HomeComponent() {
   return (
-    <section className={style.relative}>
+    <div className={style.relative}>
       <div className={style.img}>
         <Image
           priority={true}
@@ -21,7 +21,7 @@ export default function HomeComponent() {
       </div>
       <span className={style.shadoweffect} />
       <div className={style.container}>
-        <Box sx={{ m: 2, zIndex: 4 }}>
+        <Box sx={{ p: 2, zIndex: 4 }}>
           <Typography
             className="animeLeft"
             gutterBottom
@@ -61,6 +61,6 @@ export default function HomeComponent() {
           </Button>
         </Box>
       </div>
-    </section>
+    </div>
   );
 }
