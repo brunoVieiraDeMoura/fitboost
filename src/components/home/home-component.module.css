@@ -1,11 +1,12 @@
 .relative {
   position: relative;
   height: 100vh;
-  background: url('../../../public/background.jpg') no-repeat;
-  background-size: cover;
-  background-position: 40% 20%;
 }
-
+.img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .shadoweffect {
   position: absolute;
   width: 100%;
