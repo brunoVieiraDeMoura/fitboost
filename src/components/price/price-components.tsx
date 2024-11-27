@@ -6,7 +6,7 @@ import { GenericListPrice } from './list-obj';
 
 export default function PriceComponent() {
   return (
-    <div style={{ height: '100vh' }}>
+    <div style={{ height: '100%' }}>
       <Box sx={{ mt: 4, p: 2 }}>
         <Typography
           gutterBottom

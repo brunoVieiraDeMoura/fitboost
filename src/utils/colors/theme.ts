@@ -18,6 +18,36 @@ declare module '@mui/material/styles' {
 }
 
 const theme = createTheme({
+  components: {
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          color: 'blue', // Cor do texto padrão
+        },
+        input: {
+          color: '#B7B6B5',
+          '&::placeholder': {
+            color: '#B7B6B5', // Cor do placeholder
+            opacity: 1, // Garante que a opacidade seja 100%
+          },
+        },
+      },
+    },
+    MuiFormLabel: {
+      styleOverrides: {
+        root: {
+          color: '#B7B6B5',
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: {
+          borderColor: '#B7B6B5', // Cor do contorno padrão
+        },
+      },
+    },
+  },
   spacing: 8,
   breakpoints: {
     values: {
