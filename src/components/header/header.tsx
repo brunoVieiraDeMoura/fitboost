@@ -23,11 +23,17 @@ export default function HeaderComponent() {
 
   return (
     <header>
-      <AppBar position="fixed" sx={{ background: '#000' }}>
+      <AppBar
+        position="fixed"
+        sx={{
+          background:
+            'linear-gradient(125deg, rgba(28,27,27,1)30%,rgba(20,20,20,1))',
+        }}
+      >
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
             <Link style={{ display: 'flex', width: '30%' }} href={'/'}>
-              <Typography variant="h4" style={{ color: '#fff' }}>
+              <Typography variant="h4" style={{ color: '#E3E3E3' }}>
                 fit
               </Typography>
               <Typography variant="h4" color="primary">
@@ -41,7 +47,7 @@ export default function HeaderComponent() {
             color="inherit"
             aria-label="menu"
           >
-            <MenuIcon />
+            <MenuIcon sx={{ color: '#E3E3E3', fontSize: '30px' }} />
           </IconButton>
           <Drawer
             anchor="right"
