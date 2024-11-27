@@ -41,9 +41,9 @@ export default function HomeComponent() {
           </Typography>
           <Button
             className="animeLeftLow"
-            sx={{ mb: 1, color: '#333' }}
+            sx={{ mb: 1, color: '#333', fontWeight: '600' }}
             fullWidth
-            size="large"
+            size="medium"
             variant="contained"
             color="primary"
           >
@@ -53,7 +53,7 @@ export default function HomeComponent() {
             className="animeLeftLow"
             sx={{ color: '#BBEE33' }}
             fullWidth
-            size="large"
+            size="medium"
             variant="outlined"
             color="primary"
           >

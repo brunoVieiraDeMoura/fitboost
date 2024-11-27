@@ -20,11 +20,11 @@ export const GMessageObj = [
     mensagem:
       'O app é intuitivo e fácil de usar. Meu progresso nunca foi tão claro.',
   },
-  {
-    nome: 'Nathalia Orlando',
-    idade: '22',
-    urlitem: '/mulher-3.jpg',
-    mensagem:
-      'Nossa você poderia muito bem ao invés de postar as coisas de outras pessoas postar minha foto.',
-  },
+  // {
+  //   nome: 'Nathalia Orlando',
+  //   idade: '22',
+  //   urlitem: '/mulher-3.jpg',
+  //   mensagem:
+  //     'Nossa você poderia muito bem ao invés de postar as coisas de outras pessoas postar minha foto.',
+  // },
 ];

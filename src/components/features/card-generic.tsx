@@ -22,7 +22,13 @@ export default function CardGeneric({
   ordem,
 }: IGeneric) {
   return (
-    <Card sx={{ maxWidth: '100%' }}>
+    <Card
+      sx={{
+        maxWidth: '100%',
+        background:
+          'linear-gradient(225deg, rgba(182,224,60,0.01) 50%, rgba(0,0,0,0) )',
+      }}
+    >
       <CardActionArea>
         <CardContent
           sx={{

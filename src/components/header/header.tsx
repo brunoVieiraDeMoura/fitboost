@@ -16,6 +16,7 @@ import {
 import React from 'react';
 import { listOfNavigation } from './list-fetch-fake';
 import Link from 'next/link';
+import Divider from '@mui/material/Divider';
 
 export default function HeaderComponent() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -57,12 +58,22 @@ export default function HeaderComponent() {
             >
               <List sx={{ mt: 1 }}>
                 {listOfNavigation.map((item, index) => (
-                  <ListItemButton key={index}>
-                    <ListItemIcon sx={{ color: '#d0f576' }}>
-                      {item.icon}
-                    </ListItemIcon>
-                    <ListItemText sx={{ color: '#fff' }} primary={item.label} />
-                  </ListItemButton>
+                  <Box key={index} sx={{ mt: 1 }}>
+                    <ListItemButton>
+                      <ListItemIcon sx={{ color: '#d0f576' }}>
+                        {item.icon}
+                      </ListItemIcon>
+                      <ListItemText
+                        sx={{ color: '#fff' }}
+                        primary={item.label}
+                      />
+                    </ListItemButton>
+                    <Divider
+                      variant="middle"
+                      component="li"
+                      sx={{ background: 'rgba(182,224,60,.2)', mt: 1 }}
+                    />
+                  </Box>
                 ))}
               </List>
             </Box>
