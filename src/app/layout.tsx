@@ -4,6 +4,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/utils/colors/theme';
 import HeaderComponent from '@/components/header/header';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'fitboost',
@@ -41,6 +42,7 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <HeaderComponent />
             {children}
+            <SpeedInsights />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
