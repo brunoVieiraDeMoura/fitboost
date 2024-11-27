@@ -1,7 +1,7 @@
 'use client';
 
 // import Typography from '@mui/material/Typography';
-import style from './home-component.module.css';
+import style from '@/components/home/home-component.module.css';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
