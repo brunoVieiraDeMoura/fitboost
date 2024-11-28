@@ -34,15 +34,7 @@ let theme = createTheme({
     },
   },
   spacing: 8,
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 390,
-      md: 650,
-      lg: 900,
-      xl: 1200,
-    },
-  },
+
   palette: {
     mode: 'light',
     common: {
@@ -57,7 +49,7 @@ let theme = createTheme({
     },
     secondary: {
       main: '#B7B6B5',
-      light: '#E3E3E3',
+      light: '#fefefe',
       dark: '#1C1B1B',
       contrastText: '#ffffff',
     },
@@ -113,70 +105,60 @@ let theme = createTheme({
     h1: {
       fontFamily: type_first.style.fontFamily,
       fontWeight: 300,
-      fontSize: '6rem',
       lineHeight: 1.0,
       letterSpacing: '-0.01562em',
     },
     h2: {
       fontFamily: type_first.style.fontFamily,
       fontWeight: 300,
-      fontSize: '3.75rem',
       lineHeight: 1.0,
       letterSpacing: '-0.00833em',
     },
     h3: {
       fontFamily: type_first.style.fontFamily,
       fontWeight: 400,
-      fontSize: '3rem',
       lineHeight: 1.0,
       letterSpacing: '0em',
     },
     h4: {
       fontFamily: type_first.style.fontFamily,
       fontWeight: 400,
-      fontSize: '1.5rem',
       lineHeight: 1.0,
       letterSpacing: '0.00735em',
     },
     h5: {
       fontFamily: type_second.style.fontFamily,
       fontWeight: 400,
-      fontSize: '1.5rem',
       lineHeight: 1.334,
       letterSpacing: '0em',
     },
     h6: {
       fontFamily: type_second.style.fontFamily,
       fontWeight: 500,
-      fontSize: '1.25rem',
       lineHeight: 1.6,
       letterSpacing: '0.0075em',
     },
     subtitle1: {
       fontFamily: type_second.style.fontFamily,
       fontWeight: 400,
-      fontSize: '1rem',
       lineHeight: 1.75,
       letterSpacing: '0.00938em',
     },
     subtitle2: {
       fontFamily: type_second.style.fontFamily,
       fontWeight: 500,
-      fontSize: '0.875rem',
       lineHeight: 1.57,
       letterSpacing: '0.00714em',
     },
     body1: {
       fontFamily: type_second.style.fontFamily,
       fontWeight: 400,
-      fontSize: '1.125rem',
       lineHeight: 1.2,
       letterSpacing: '0.00938em',
     },
     body2: {
       fontFamily: type_second.style.fontFamily,
       fontWeight: 400,
-      fontSize: '0.875rem',
       lineHeight: 1.2,
       letterSpacing: '0.01071em',
     },

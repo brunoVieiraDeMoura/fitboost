@@ -1,25 +1,33 @@
 'use client';
 
-// import Typography from '@mui/material/Typography';
-import style from '@/components/home/home-component.module.css';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
 import Image from 'next/image';
 import imagePath from '../../../public/background.jpg';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+
 export default function HomeComponent() {
   return (
-    <div className={style.relative}>
-      <div className={style.img}>
+    <Box sx={{ position: 'relative', height: '100vh', width: '100%' }}>
+      <Box sx={{ position: 'absolute', height: '100%', width: '100%' }}>
         <Image
           priority={true}
           src={imagePath}
           alt="always add alt"
           fill
-          style={{ objectFit: 'cover', objectPosition: '35% 20%' }}
+          style={{ objectFit: 'cover', objectPosition: '25% 20%' }}
         />
-      </div>
-      <span className={style.shadoweffect} />
+      </Box>
+      <Box
+        sx={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          background:
+            'linear-gradient(25deg,rgba(0, 0, 0, 1),rgba(182, 224, 60, 0.05) 75%)',
+        }}
+      />
       <Box
         sx={{
           width: '100%',
@@ -44,12 +52,12 @@ export default function HomeComponent() {
       >
         <Box
           sx={{
-            maxWidth: '60rem',
+            maxWidth: '70rem',
             alignItems: 'center',
             width: {
               xs: '100%',
               sm: '100%',
-              md: '60%',
+              md: '50%',
             },
             p: 2,
             zIndex: 4,
@@ -98,9 +106,13 @@ export default function HomeComponent() {
                   md: 1,
                   lg: 0,
                 },
-
-                color: '#333',
+                color: '#1C1B1B',
                 fontWeight: '600',
+                '&:hover': {
+                  color: '#a2c41e',
+                  backgroundColor: 'transparent',
+                  outline: '2px solid #a2c41e',
+                },
               }}
               fullWidth
               size="medium"
@@ -111,7 +123,14 @@ export default function HomeComponent() {
             </Button>
             <Button
               className="animeLeftLow"
-              sx={{ color: '#BBEE33', fontWeight: '600' }}
+              sx={{
+                color: '#BBEE33',
+                fontWeight: '600',
+                '&:hover': {
+                  color: '#1C1B1B',
+                  backgroundColor: '#bbee33',
+                },
+              }}
               fullWidth
               size="medium"
               variant="outlined"
@@ -120,8 +139,58 @@ export default function HomeComponent() {
               Disponível no iOS
             </Button>
           </Box>
+          <Box
+            sx={{
+              mt: 4,
+              display: {
+                xs: 'none',
+                sm: 'none',
+                md: 'flex',
+              },
+            }}
+          >
+            <Box
+              className="animeLeftLow"
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                width: '100%',
+              }}
+            >
+              <Box sx={{ display: 'flex' }}>
+                <Typography variant="h3" color="primary">
+                  4.8
+                </Typography>
+                <TrendingUpIcon
+                  sx={{ fontSize: '3.25rem', color: '#ccee33' }}
+                />
+              </Box>
+              <Typography variant="h5" color="secondary.light">
+                Ranking da AppStore
+              </Typography>
+            </Box>
+            <Box
+              className="animeLeftLow"
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                // background: 'red',
+                width: '100%',
+                alignItems: 'center',
+              }}
+            >
+              <Box sx={{ display: 'flex' }}>
+                <Typography variant="h3" color="primary">
+                  50k<span style={{ color: '#fefefe' }}>+</span>
+                </Typography>
+              </Box>
+              <Typography variant="h5" color="secondary.light">
+                Usuários
+              </Typography>
+            </Box>
+          </Box>
         </Box>
       </Box>
-    </div>
+    </Box>
   );
 }

@@ -32,7 +32,7 @@ export default function HeaderComponent() {
         <Box
           sx={{
             width: '100%',
-            maxWidth: '60rem',
+            maxWidth: '70rem',
             display: {
               md: 'flex',
               sm: 'none',
@@ -44,7 +44,6 @@ export default function HeaderComponent() {
           <DesktopNavigation />
         </Box>
       </AppBar>
-      {/* DESKTOP */}
     </>
   );
 }
