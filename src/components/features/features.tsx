@@ -6,8 +6,8 @@ import { CardGObj } from './obj-card';
 import CardGenericDeskt from './generic-card-desk';
 export default function FeaturesComponent() {
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         height: '100vh',
         width: '100%',
         display: 'flex',
@@ -87,6 +87,6 @@ export default function FeaturesComponent() {
           ))}
         </Box>
       </Box>
-    </div>
+    </Box>
   );
 }

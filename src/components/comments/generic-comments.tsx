@@ -21,14 +21,15 @@ export default function GenericMessage({
   mensagem,
 }: IGMessage) {
   return (
-    <Card sx={{ maxWidth: '100%' }}>
+    <Card sx={{}}>
       <CardActionArea>
         <CardContent
           sx={{
             display: 'grid',
             gridTemplateColumns: '1fr 4fr',
             justifyContent: 'space-around',
-            minHeight: '140px',
+            height: '140px',
+            width: '400px',
             border: '1px solid #BBEE33',
             background:
               'linear-gradient(25deg,rgba(0,0,0,0.6) 10%,rgba(0,0,0,.9) )',
