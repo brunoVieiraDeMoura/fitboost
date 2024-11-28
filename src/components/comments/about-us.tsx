@@ -103,7 +103,7 @@ export default function AboutUsComponent() {
               <Typography variant="body1" color="secondary.light">
                 Veja Mais
               </Typography>
-              <span style={{ color: '#BBEE33' }}>&#8618;</span>
+              <span style={{ color: '#BBEE33' }}>↪</span>
             </Link>
           </Box>
         </Box>

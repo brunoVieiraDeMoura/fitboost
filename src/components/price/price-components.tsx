@@ -395,7 +395,7 @@ export default function PriceComponent() {
                 display: 'flex',
                 background: '#BBEE33',
                 position: 'absolute',
-                width: '100px',
+                width: '120px',
                 top: '-8px',
                 marginLeft: 'auto',
                 marginRight: 'auto',
@@ -406,7 +406,9 @@ export default function PriceComponent() {
                 padding: '2px',
               }}
             >
-              <p>Mais popular</p>
+              <p style={{ fontSize: '12px', fontWeight: 'bold' }}>
+                Mais popular
+              </p>
             </div>
             <Button
               variant="contained"
