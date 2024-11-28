@@ -10,8 +10,8 @@ export default function PriceComponent() {
     <Box
       sx={{
         height: {
-          xs: '100vh',
-          sm: '100vh',
+          xs: '100%',
+          sm: '100%',
           md: '100vh',
         },
         width: '100%',
@@ -60,10 +60,18 @@ export default function PriceComponent() {
 
       <Box
         sx={{
-          display: 'grid',
+          display: {
+            xs: 'none',
+            sm: 'none',
+            md: 'grid',
+          },
           gridTemplateColumns: '1fr 1fr',
           gap: 2,
-          width: '50%',
+          width: {
+            md: '80%',
+            lg: '60%',
+            xl: '50%',
+          },
           height: '380px',
         }}
       >
