@@ -16,14 +16,14 @@ export default function HeaderComponent() {
             'linear-gradient(125deg, rgba(28,27,27,1)30%,rgba(20,20,20,1))',
           display: 'flex',
           alignItems: {
-            tablet: 'center',
+            md: 'center',
           },
         }}
       >
         <Box
           sx={{
             display: {
-              tablet: 'none',
+              md: 'none',
             },
           }}
         >
@@ -34,9 +34,9 @@ export default function HeaderComponent() {
             width: '100%',
             maxWidth: '60rem',
             display: {
-              tablet: 'flex',
-              mobile: 'none',
-              mobiles: 'none',
+              md: 'flex',
+              sm: 'none',
+              xs: 'none',
             },
             justifyContent: 'center',
           }}

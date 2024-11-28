@@ -35,8 +35,8 @@ export default function AboutUsComponent() {
           <Box
             sx={{
               display: {
-                mobiles: GMessageObj.length - 1 !== index ? 'block' : 'none',
-                mobile: 'block',
+                xs: GMessageObj.length - 1 !== index ? 'block' : 'none',
+                sm: 'block',
               },
             }}
             key={index}

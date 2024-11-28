@@ -19,6 +19,7 @@ export default function DesktopNavigation() {
           display: 'flex',
           alignItems: 'center',
           gap: 4,
+          mr: 2,
         }}
       >
         <Link href={'/'}>

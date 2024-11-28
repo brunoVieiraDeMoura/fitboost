@@ -1,23 +1,8 @@
 'use client';
 import { type_first, type_second } from '@/utils/fonts/font';
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-declare module '@mui/material/styles' {
-  interface BreakpointOverrides {
-    xs: false;
-    sm: false;
-    md: false;
-    lg: false;
-    xl: false;
-    mobile: true;
-    mobiles: true;
-    tablet: true;
-    laptop: true;
-    desktop: true;
-  }
-}
-
-const theme = createTheme({
+let theme = createTheme({
   components: {
     MuiInputBase: {
       styleOverrides: {
@@ -51,11 +36,11 @@ const theme = createTheme({
   spacing: 8,
   breakpoints: {
     values: {
-      mobiles: 0,
-      mobile: 390,
-      tablet: 650,
-      laptop: 900,
-      desktop: 1200,
+      xs: 0,
+      sm: 390,
+      md: 650,
+      lg: 900,
+      xl: 1200,
     },
   },
   palette: {
@@ -197,5 +182,7 @@ const theme = createTheme({
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;
