@@ -6,7 +6,7 @@ import PriceComponent from '@/components/price/price-components';
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ width: '100%' }}>
       <HomeComponent />
       <FeaturesComponent />
       <AboutUsComponent />

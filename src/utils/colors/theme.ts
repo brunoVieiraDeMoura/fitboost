@@ -149,7 +149,7 @@ const theme = createTheme({
     h4: {
       fontFamily: type_first.style.fontFamily,
       fontWeight: 400,
-      fontSize: '1.25rem',
+      fontSize: '1.5rem',
       lineHeight: 1.0,
       letterSpacing: '0.00735em',
     },

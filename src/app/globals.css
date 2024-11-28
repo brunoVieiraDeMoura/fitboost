@@ -41,7 +41,12 @@ a {
   text-decoration: none;
   color: #333;
 }
-
+.container {
+  max-width: 80rem;
+  background: red;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
 /* //ANIMATION */
 
 .animeLeft {
