@@ -15,10 +15,10 @@ export default function PriceComponent() {
           color="initial"
         >
           Escolha o plano perfeito para{' '}
-          <span style={{ color: '#BBEE33' }}>você</span>.
+          <span style={{ color: '#a2c41e' }}>você</span>.
         </Typography>
         <Typography textAlign="center" variant="body1" color="initial">
-          Experimente o fit<span style={{ color: '#BBEE33' }}>boost</span>. sem
+          Experimente o fit<span style={{ color: '#a2c41e' }}>boost</span>. sem
           anúncios e com todas suas ferramentas para acesso.
         </Typography>
       </Box>
