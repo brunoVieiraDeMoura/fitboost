@@ -12,7 +12,7 @@ export default function PriceComponent() {
         height: {
           xs: '100%',
           sm: '100%',
-          md: '100vh',
+          md: '100dvh',
         },
         width: '100%',
         display: 'flex',
