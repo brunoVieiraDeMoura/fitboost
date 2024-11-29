@@ -367,12 +367,11 @@ export default function ContactComponent() {
                 color: '#B7B6B5',
               }}
               variant="body2"
-              color="initial"
+              color="secondary.light"
             >
               <span style={{ color: '#bbee33' }}>
                 bruno.moura.code@gmail.com
               </span>
-              , todos os direitos reservados
             </Typography>
           </Box>
         </Box>
