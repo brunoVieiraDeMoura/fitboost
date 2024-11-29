@@ -97,13 +97,25 @@ export default function AboutUsComponent() {
           ))}
           <Box display="flex" justifyContent="end">
             <Link
-              style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '8px',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
               href={'/'}
             >
               <Typography variant="body1" color="secondary.light">
                 Veja Mais
               </Typography>
-              <span style={{ color: '#BBEE33' }}>↪</span>
+              <Typography
+                sx={{ fontWeight: 'bold' }}
+                variant="h5"
+                color="primary"
+              >
+                {`>`}
+              </Typography>
             </Link>
           </Box>
         </Box>
