@@ -59,8 +59,8 @@ export default function AboutUsComponent() {
             <span style={{ color: '#bbee33' }}>dizem</span>?
           </Typography>
           <Typography variant="body1" color="secondary.light">
-            Veja como a fit<span style={{ color: '#BBEE33' }}>boost</span> tem
-            transformado vidas:
+            Descubra como o fit<span style={{ color: '#bbee33' }}>boost</span>{' '}
+            tem revolucionado a jornada fitness de nossos usuários!
           </Typography>
         </div>
         <Box

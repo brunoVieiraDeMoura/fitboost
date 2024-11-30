@@ -31,8 +31,7 @@ export default function FeaturesComponent() {
             color="secondary.dark"
             gutterBottom
           >
-            O seu treino, do <span style={{ color: '#a2c41e' }}>seu jeito</span>
-            !
+            O seu treino <span style={{ color: '#a2c41e' }}>do seu jeito</span>!
           </Typography>
           <Typography textAlign="center" variant="body1" color="secondary.dark">
             Descubra como o fit<span style={{ color: '#a2c41e' }}>boost</span>{' '}

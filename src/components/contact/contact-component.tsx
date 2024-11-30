@@ -72,9 +72,9 @@ export default function ContactComponent() {
               variant="body1"
               color="secondary.light"
             >
-              Quer saber mais sobre o fit
+              Quer saber sobre o fit
               <span style={{ color: '#BBEE33' }}>boost</span> ou precisa de
-              ajuda? Entre em contato conosco:
+              ajuda? Entre em contato conosco!
             </Typography>
             <Divider
               sx={{

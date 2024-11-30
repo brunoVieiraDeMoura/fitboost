@@ -17,13 +17,13 @@ export const CardGObj = [
   {
     title: 'Alertas e Lembretes',
     text_description:
-      'Nunca mais perca um treino com notificações personalizadas.',
+      'Nunca mais perca um treino com nossas notificações personalizadas.',
     icon: <NotificationsNoneIcon sx={{ fontSize: '42px', color: '#1C1B1B' }} />,
   },
   {
     title: 'Biblioteca de Exercícios',
     text_description:
-      'Mais de 300 exercícios detalhados para todas as partes do corpo.',
+      'Mais de 300 exercícios personalizados e ajustados às suas necessidades.',
     icon: <FitnessCenterIcon sx={{ fontSize: '42px', color: '#1C1B1B' }} />,
   },
 ];

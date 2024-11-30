@@ -1,11 +1,11 @@
 import HomeIcon from '@mui/icons-material/Home';
 import StyleIcon from '@mui/icons-material/Style';
-import CommentIcon from '@mui/icons-material/Comment';
 import AddCardIcon from '@mui/icons-material/AddCard';
 import ContactsIcon from '@mui/icons-material/Contacts';
+import InsertCommentIcon from '@mui/icons-material/InsertComment';
 export const listOfNavigation = [
   {
-    label: 'Home',
+    label: 'Início',
     icon: <HomeIcon />,
   },
   {
@@ -14,10 +14,10 @@ export const listOfNavigation = [
   },
   {
     label: 'Depoimentos',
-    icon: <CommentIcon />,
+    icon: <InsertCommentIcon />,
   },
   {
-    label: 'Preços',
+    label: 'Planos',
     icon: <AddCardIcon />,
   },
   {

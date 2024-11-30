@@ -37,8 +37,8 @@ export default function PriceComponent() {
           variant="h3"
           color="initial"
         >
-          Escolha o plano perfeito para{' '}
-          <span style={{ color: '#a2c41e' }}>você</span>.
+          Escolha <span style={{ color: '#a2c41e' }}> o plano perfeito</span>{' '}
+          para você! .
         </Typography>
         <Typography
           sx={{
@@ -53,8 +53,9 @@ export default function PriceComponent() {
           variant="body1"
           color="initial"
         >
-          Teste <span style={{ color: '#a2c41e' }}>Grátis por 7 dias, </span>sem
-          preocupações. Você pode alterar ou cancelar seu plano quando quiser.
+          <span style={{ color: '#a2c41e' }}> Teste grátis </span> por 7 dias,
+          sem compromisso! Você pode alterar ou cancelar seu plano a qualquer
+          momento.
         </Typography>
       </Box>
 

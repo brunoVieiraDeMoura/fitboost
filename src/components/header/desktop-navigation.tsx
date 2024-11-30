@@ -37,7 +37,7 @@ export default function DesktopNavigation() {
               },
             }}
           >
-            Home
+            Início
           </Typography>
         </Link>
         <Link href={'/'}>
@@ -63,7 +63,20 @@ export default function DesktopNavigation() {
               },
             }}
           >
-            Preços
+            Depoimentos
+          </Typography>
+        </Link>
+        <Link href={'/'}>
+          <Typography
+            variant="subtitle1"
+            sx={{
+              color: '#E3E3E3',
+              '&:hover': {
+                color: '#BBEE33',
+              },
+            }}
+          >
+            Planos
           </Typography>
         </Link>
         <Link href={'/'}>

@@ -69,8 +69,8 @@ export default function HomeComponent() {
             variant="h2"
             sx={{ color: '#fff' }}
           >
-            Transforme seu treino, alcance{' '}
-            <span style={{ color: '#ccee33' }}>seus objetivos</span>!
+            Transforme seu treino e{' '}
+            <span style={{ color: '#ccee33' }}>alcance seus objetivos</span>!
           </Typography>
           <Typography
             className="animeLeftMedium"
@@ -78,8 +78,8 @@ export default function HomeComponent() {
             sx={{ mb: 4, color: '#fff' }}
           >
             Com o fit<span style={{ color: '#BBEE33' }}>boost</span>, você tem
-            treinos personalizados e acompanhamento do seu progresso na palma da
-            mão.
+            seus treinos personalizados e acompanhamento do seu progresso na
+            palma da mão.
           </Typography>
           <Box
             sx={{
@@ -119,7 +119,7 @@ export default function HomeComponent() {
               variant="contained"
               color="primary"
             >
-              Baixe agora no Android
+              Baixe agora para Android
             </Button>
             <Button
               className="animeLeftLow"
