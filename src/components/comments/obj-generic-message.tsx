@@ -36,8 +36,8 @@ export const GMessageObj = [
     bottom: '',
   },
   {
-    nome: 'Suzana Fernandes',
-    idade: '22',
+    nome: 'Carlos Fernandes',
+    idade: '29',
     deg: '-2deg',
     urlitem: '/mulher-3.jpg',
     mensagem:

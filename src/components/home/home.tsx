@@ -9,7 +9,17 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
 export default function HomeComponent() {
   return (
-    <Box sx={{ position: 'relative', height: '100dvh', width: '100%' }}>
+    <Box
+      sx={{
+        position: 'relative',
+        height: {
+          xs: '100dvh',
+          sm: '100dvh',
+          md: '100vh',
+        },
+        width: '100%',
+      }}
+    >
       <Box sx={{ position: 'absolute', height: '100%', width: '100%' }}>
         <Image
           priority={true}
