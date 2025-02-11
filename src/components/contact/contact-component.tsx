@@ -79,14 +79,29 @@ export default function ContactComponent() {
             <Divider
               sx={{
                 color: 'white',
-                background: '#ccee33',
+                background: {
+                  xs: 'rgba(255,255,255,0.05)',
+                  md: '#ccee33',
+                },
+
                 mt: 4,
-                mb: 2,
+                mb: {
+                  xs: 0,
+                  sm: 0,
+                  md: 4,
+                },
               }}
               variant="fullWidth"
               component="li"
             />
-            <Box>
+            <Box
+              sx={{
+                display: {
+                  xs: 'none',
+                  md: 'block',
+                },
+              }}
+            >
               <Typography
                 textAlign="center"
                 variant="body1"
@@ -164,6 +179,8 @@ export default function ContactComponent() {
                 </Box>
               </Box>
             </Box>
+
+            {/* aqui */}
           </Box>
           <Box
             sx={{
@@ -193,7 +210,11 @@ export default function ContactComponent() {
                     md: 'rgba(255,255,255,0.03)',
                   },
                   borderRadius: 1,
-                  mt: 4,
+                  mt: {
+                    xs: 0,
+                    sm: 0,
+                    md: 4,
+                  },
                   gap: 2,
                 }}
               >
@@ -273,20 +294,32 @@ export default function ContactComponent() {
           </Box>
         </Box>
         <Divider
-          sx={{ color: 'white', mt: 4, background: 'rgba(255,255,255,0.05)' }}
+          sx={{
+            color: 'white',
+            mt: 4,
+            mb: 4,
+            background: 'rgba(255,255,255,0.05)',
+          }}
           variant="middle"
           component="li"
         />
-        {/* EXTRA MENU */}
         <Box
           sx={{
             display: {
-              xs: 'bloack',
+              xs: 'block',
               sm: 'block',
               md: 'none',
             },
           }}
         >
+          <Typography
+            textAlign="center"
+            variant="body1"
+            color="secondary.light"
+          >
+            Outras informações da fit
+            <span style={{ color: '#bbee33' }}>boost</span>
+          </Typography>
           <Box
             sx={{
               display: 'flex',
@@ -356,6 +389,7 @@ export default function ContactComponent() {
             </Box>
           </Box>
         </Box>
+
         {/* COPY */}
         <Box>
           <Box>
