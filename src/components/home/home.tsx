@@ -20,7 +20,15 @@ export default function HomeComponent() {
         width: '100%',
       }}
     >
-      <Box sx={{ position: 'absolute', height: '100%', width: '100%' }}>
+      <Box
+        sx={{
+          position: 'absolute',
+          height: '100%',
+          width: '100%',
+          background:
+            'linear-gradient(125deg, rgba(28,27,27,1)30%,rgba(20,20,20,1))',
+        }}
+      >
         <Image
           priority={true}
           src={imagePath}
